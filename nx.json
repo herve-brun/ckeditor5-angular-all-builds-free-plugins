@@ -1,0 +1,23 @@
+{
+  "extends": "@nrwl/workspace/presets/core.json",
+  "npmScope": "@herve-brun/ckeditor5-angular-all-builds-free-plugins",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/workspace"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
+      }
+    }
+  }
+}

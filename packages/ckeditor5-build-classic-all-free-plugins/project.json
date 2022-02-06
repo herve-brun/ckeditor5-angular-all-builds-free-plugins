@@ -1,0 +1,35 @@
+{
+  "root": "packages/ckeditor5-build-classic-all-free-plugins",
+  "sourceRoot": "packages/ckeditor5-build-classic-all-free-plugins/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/ckeditor5-build-classic-all-free-plugins",
+        "main": "packages/ckeditor5-build-classic-all-free-plugins/src/index.ts",
+        "tsConfig": "packages/ckeditor5-build-classic-all-free-plugins/tsconfig.lib.json",
+        "assets": ["packages/ckeditor5-build-classic-all-free-plugins/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/ckeditor5-build-classic-all-free-plugins/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/ckeditor5-build-classic-all-free-plugins"],
+      "options": {
+        "jestConfig": "packages/ckeditor5-build-classic-all-free-plugins/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

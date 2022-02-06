@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@@herve-brun/ckeditor5-angular-all-builds-free-plugins/ckeditor5-build-classic-all-free-plugins": [
+        "packages/ckeditor5-build-classic-all-free-plugins/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

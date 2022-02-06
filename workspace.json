@@ -1,4 +1,6 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "ckeditor5-build-classic-all-free-plugins": "packages/ckeditor5-build-classic-all-free-plugins"
+  }
 }
